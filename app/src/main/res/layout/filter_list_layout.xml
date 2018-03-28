@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="#f0f0f0"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/filterHeaderText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="Filter"
+        android:textSize="32sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+   
+
+    <Button
+        android:id="@+id/draftTwoButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       
+        android:layout_marginTop="30dp"
+        android:text="Draft-2"
+        android:textAllCaps="false"
+        android:elevation="9dp"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/filterHeaderText" />
+
+    <Button
+        android:id="@+id/draftOneButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="1dp"
+        android:text="Draft-1"
+        android:textAllCaps="false"
+        android:elevation="9dp"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toStartOf="@+id/draftTwoButton"
+        app:layout_constraintTop_toBottomOf="@+id/filterHeaderText" />
+
+    <Button
+        android:id="@+id/draftThreeButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="1dp"
+        android:text="Draft-3"
+        android:textAllCaps="false"
+        android:elevation="9dp"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toEndOf="@+id/draftTwoButton"
+        app:layout_constraintTop_toBottomOf="@+id/filterHeaderText" />
+
+    <Button
+        android:id="@+id/onlineButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Online"
+        android:textAllCaps="false"
+        android:layout_marginEnd="1dp"
+        android:layout_marginTop="1dp"
+        android:elevation="9dp"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/draftTwoButton" />
+
+    <Button
+        android:id="@+id/betaButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Beta"
+        android:textAllCaps="false"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:elevation="9dp"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/draftTwoButton" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.50121653" />
+
+    
+
+    <Button
+        android:id="@+id/toDateButton"
+        android:layout_width="148dp"
+        android:layout_height="66dp"
+        android:elevation="9dp"
+        android:textAllCaps="false"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="36dp"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
+        android:text="To (Date)"
+        app:layout_constraintStart_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/betaButton" />
+
+    <Button
+        android:id="@+id/fromDateButton"
+        android:layout_width="148dp"
+        android:layout_height="66dp"
+        android:elevation="9dp"
+        android:layout_marginEnd="3dp"
+        android:textAllCaps="false"
+        android:layout_marginTop="36dp"
+        android:background="@android:color/white"
+        android:textColor="@android:color/black"
+        android:text="From (Date)"
+        app:layout_constraintEnd_toStartOf="@+id/guideline2"
+        app:layout_constraintTop_toBottomOf="@+id/onlineButton" />
+
+
+    <Button
+        android:id="@+id/buttonAddApk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/colorPrimary"
+        android:text="Apply"
+        android:textAllCaps="false"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/fromDateButton"
+        app:layout_constraintVertical_bias="0.01999998" />
+
+
+</android.support.constraint.ConstraintLayout>
